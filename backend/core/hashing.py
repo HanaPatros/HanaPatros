@@ -10,3 +10,6 @@ class Hasher:
     @staticmethod
     def get_password_hash(plain_password):
         return pwt_context.hash(plain_password)
+
+
+
