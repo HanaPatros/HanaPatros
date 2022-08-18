@@ -9,6 +9,6 @@ router = APIRouter()
 
 
 @router.post("/users")
-def create_users(user: UserCreate, db:Session=Depends(get_db)):
-    user = create_new_users(user, db)
+def create_user(user: UserCreate, db:Session=Depends(get_db)):
+    user = create_new_user(user, db)
     return user
